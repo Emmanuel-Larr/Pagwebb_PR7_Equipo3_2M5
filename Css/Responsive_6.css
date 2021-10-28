@@ -1,0 +1,18 @@
+@media screen and (max-width: 970px)
+{
+    .content-all
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 127px)
+{
+    .content-all
+    {
+        width: 100%;
+    }
+    .conclusiones
+    {
+        height: 1700px;
+    }
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica No.7</title>
+    <link rel="stylesheet" href="Css/css practica 7.css">
+    <link rel="stylesheet" href="Css/Responsive_7.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="Practica No.1.html">
+    <link rel="stylesheet" href="Practica No.2.html">
+    <link rel="stylesheet" href="Practica No.3.html">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
+    <script type="text/javascript" src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+    <script type="text/javascript">
+    
+    $(document).on('ready',function()
+                {
+                $('#platillos li').draggable(
+                    {
+                    helper:'clone'
+                    });
+
+                $('#registrador').droppable({
+                    drop:eventDrop
+                });
+
+                function eventDrop(evento,ui){
+                    var draggable = ui.draggable;
+                    var precio = parseFloat(draggable.children('.precio').text());
+                    var total = parseFloat($('#total').text());
+                    total=total+precio;
+                    $('#total').text(total);
+                }
+            });
+    </script>
+</head>
+<body>
+    <main>
+        <div class="content-all">
+            <header></header>
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu">Menu</label>
+            <h2>Equipo 3 - M5</h2>
+            
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Portada</a></li>
+                    <li><a href="Practica No.1.html">Practica No.1</a></li>
+                    <li><a href="Practica No.2.html">Practica No.2</a></li>
+                    <li><a href="Practica No.3.html">Practica No.3</a></li>
+                    <li><a href="Practica No.4.html">Practica No.4</a></li>
+                    <li><a href="Practica No.5.html">Practica No.5</a></li>
+                    <li><a href="Practica No.6.html">Practica No.6</a></li>
+                    <li><a href="Practica No.7.html">Practica No.7</a></li>
+                    <li>PIA - (En desarrollo)</li>
+                </ul>
+            </nav>
+        
+            <div class="contenedor">
+                <h3>Carrito de compras</h3>
+                <hr><br>
+
+                <div class="total">
+                    <section id="registrador">
+                        <img src="img/Practica7/dinero.png" style="margin-left: 25px; height: 200px; width: 200px;">
+                        <hr>
+                        <h3>Precio total</h3>
+                        <span style="margin-left: 110px; font-size: 30px;">$<span id="total">0</span><span>
+                    </section>
+                </div>
+            </div>
+
+            <article>
+
+                <div class="Conceptos">
+                
+                <br>
+                <h1>Practica No.7<br><br>Tienda web con funcion drag y  drop</h1><br>
+
+                <hr>
+                <h3>Menu de comidas</h3>
+                <hr><br>
+                <p style="padding: 20px;">Hola y bienvenido a nuestra pagina web de comida rapida, para comprar cualquier platillo de nuestro menu simplemente haga click en la imagen del platillo y arrastrela hacia la 
+                caja registradora, en donde dependiando cuantos platillos comprara se sumaran los precios y dara el total a cobrar.
+                    </p>
+
+                <hr>
+                <h3>Desayunos</h3>
+                <hr><br>
+
+                <section id="platillos">
+                <div class="desayuno">
+                    <div class="hotbox"> 
+                        <li data-articulo="hotcake">Hotcake: <br>$<span class="precio">150</span><br><img class="hotcake" id="hotcake" src="img/Practica7/hotcake.png"></li>
+                    </div> 
+
+                    <div class="omebox"> 
+                        <li data-articulo="omelet">Omelet: <br>$<span class="precio">80</span><br><img class="omelet" id="omelet" src="img/Practica7/omelet.png"> </li>
+                    </div>
+
+                    <div class="mobox"> 
+                        <li data-articulo="mollete">Mollete: <br>$<span class="precio">50</span><br><img class="mollete" id="mollete" src="img/Practica7/mollete.png"></li>
+                    </div>
+                </div><br>
+                </section>  
+                
+                <hr>
+                <h3>Comidas</h3>
+                <hr><br>
+
+                <section id="platillos">
+                <div class="comida">
+
+                    <div class="hambox"> 
+                        
+                        <li data-articulo="hamburguesa">Hamburguesa: <br>$<span class="precio">200</span><br><img class="hamburguesa" id="hamburguesa" src="img/Practica7/hamburguesa.png"></li>
+                    </div> 
+
+                    <div class="burrbox"> 
+                        <li data-articulo="burrito">Burrito: <br>$<span class="precio">140</span><br><img class="burrito" id="burrito" src="img/Practica7/burrito.png"></li>
+                    </div>
+
+                    <div class="pobox"> 
+                        <li data-articulo="pollo">Pollo: <br>$<span class="precio">90</span><br><img class="pollo" id="pollo" src="img/Practica7/pollo.png"> </li>
+                    </div>
+                </div><br>
+            </section>
+
+                <hr>
+                <h3>Bebidas</h3>
+                <hr><br>
+                <section id="platillos"> 
+                <div class="bebidas">
+
+                    <div class="cocabox"> 
+
+                        <li data-articulo="cocacola">CocaCola: <br>$<span class="precio">15</span><br><img class="cocacola" id="cocacola" src="img/Practica7/cocacola.png"> </li>
+                    </div> 
+
+                    <div class="pepsibox"> 
+
+                        <li data-articulo="pepsi">Pepsi: <br>$<span class="precio">15</span><br><img class="pepsi" id="pepsi" src="img/Practica7/pepsi.png"></li> 
+                    </div>
+
+                    <div class="limobox"> 
+
+                        <li data-articulo="limonada">Limonada: <br>$<span class="precio">15</span><br><img class="limonada" id="limonada" src="img/Practica7/limonada.png"></li>
+                         
+                    </div>
+                </div><br>
+                </section>
+
+
+                    </div>
+                    <div class="datos">
+                        <h1>Conclusiones individuales</h1><br>
+                        <h5><strong></strong>Emmanuel Enrique Larraga Bueno</strong></h5><br>
+                        <p>En conclusion en esta practica fue un poco mas complicada que las anteriores, ya que ocupaba de varias seriquetas para que pueda funcionar, ademas de la funcion drag y drop que dependen mucho del evento que se les asigne, pero gracias a que comprendi el como funcionan pude aprender mas acerca de las distintas imlementaciones y etiquetas que puede tener HTML, en un futuro me podria ayudar en el diseño de una pagina web tipo tienda, ya que la propia funcion de drag es muy util para ese tipo de paginas.</p><br><br>
+        
+                        <h5><strong>Alan Guillermo Ramos Zavala</strong></h5><br>
+                        <p>En esta práctica fue un poco difícil el hacer funcionar el menú, ya que no encontrábamos la manera correcta de hacerlo funcionar, pero después de varios intentos se logró obtener la solución.  Fue algo muy interesante el utilizar el drag and drop, considero que es una gran herramienta para poder hacer más interactiva o facilitar el manejo de la página a las personas que la visiten.</p><br><br>
+        
+                        <h5><strong>Adrian Fuentes Mendoza</strong></h5><br>
+                        <p>Para esta práctica número siete, se vieron complicaciones, principalmente por la nueva funcionalidad a implementar, si bien a pesar de ser difícil no fue imposible, tras pruebas y errores y apoyo, se logró conseguir la funcionalidad de drag y drop en la página completando así la funcionalidad de esta, e igualmente aplicando todos los conocimientos anteriores  de las demás prácticas</p><br><br>
+        
+                        <h5><strong>Isaias Jair Solano Peral</strong></h5><br>
+                        <p>La practica numero 7 fue la practica mas compleja ya que fue nuestro primer contacto con la función Drag y Drop de HTML5 , por lo que represento un reto lograr que la pagina funcionara correctamente como queríamos. Para ello consultamos  la lección numero 6 del curso HTML5 de Microsoft, w3schools y vídeos tutoriales de Internet.   Puedo concluir que las funciones  de “arrastrar” (drag) y “soltar” (drop) son una atractiva e interesante forma de colocar visualmente ciertos elementos en pantalla en lugar de hacerlo pulsando un botón , aunque su implementación sea mas complicada. Le añaden  dinamismo a la pagina al permitir un mayor interacción con el contenido.</p><br><br>
+        
+                        <h5><strong>Enrique Escobedo Adame</strong></h5><br>
+                        <p>Se presentaron puntos complicados dentro de la practica se tuvieron que volver a repasar los temas de las practicas anteriores para poder llegar a una solución de la misma forma viento tutoriales y estudiando distintas instrucciones de html </p><br><br>
+        
+                        </div>
+            </article>
+        </div>
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica No.6</title>
+    <link rel="stylesheet" href="Css/css practica 6.css">
+    <link rel="stylesheet" href="Css/Responsive_6.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="Practica No.1.html">
+    <link rel="stylesheet" href="Practica No.2.html">
+    <link rel="stylesheet" href="Practica No.3.html">
+</head>
+<body>
+    <main>
+        <div class="content-all">
+            <header></header>
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu">Menu</label>
+            <h2>Equipo 3 - M5</h2>
+            
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Portada</a></li>
+                    <li><a href="Practica No.1.html">Practica No.1</a></li>
+                    <li><a href="Practica No.2.html">Practica No.2</a></li>
+                    <li><a href="Practica No.3.html">Practica No.3</a></li>
+                    <li><a href="Practica No.4.html">Practica No.4</a></li>
+                    <li><a href="Practica No.5.html">Practica No.5</a></li>
+                    <li><a href="Practica No.6.html">Practica No.6</a></li>
+                    <li><a href="Practica No.7.html">Practica No.7</a></li>
+                    <li>PIA - (En desarrollo)</li>
+                </ul>
+            </nav>
+            <article>
+                <div class="Conceptos">
+
+                <h1>Practica No.6<br><br>Dibujo complejo con Canvas</h1><br><br><br><br>
+
+                <canvas id="lienzo" width="920" height="920"></canvas>
+
+                    <script>
+                        var c = document.getElementById("lienzo");
+                        var contexto = c.getContext("2d");             //negro
+                        
+                        contexto.fillRect(250, 10, 400, 50);
+                        contexto.fillRect(200, 60, 50, 50);
+                        contexto.fillRect(150, 110, 50, 50); 
+                        contexto.fillRect(100, 160, 50, 100); 
+                        contexto.fillRect(50, 260, 50, 350); 
+                        contexto.fillRect(100, 610, 50, 50); 
+                        contexto.fillRect(150, 660, 100, 50); 
+                        contexto.fillRect(200, 710, 150, 50);
+                        contexto.fillRect(250, 760, 100, 50); 
+                        contexto.fillRect(350, 810, 200, 50);
+                        contexto.fillRect(650, 60, 50, 50);
+                        contexto.fillRect(700, 110, 50, 50);
+                        contexto.fillRect(750, 160, 50, 100);
+                        contexto.fillRect(800, 260, 50, 350);
+                        contexto.fillRect(750, 610, 50, 50);
+                        contexto.fillRect(650, 660, 100, 50);
+                        contexto.fillRect(550, 710, 150, 50);
+                        contexto.fillRect(550, 760, 100, 50);
+    
+                        var b = document.getElementById("lienzo");
+                        var contexto = lienzo.getContext("2d");
+                        contexto.fillStyle = "black"               //negro
+                        contexto.fillRect(200, 160, 500, 50);
+                        contexto.fillRect(250, 210, 60, 50);
+                        contexto.fillRect(150, 260, 600, 50);
+                        contexto.fillRect(590, 210, 60, 50);
+                        contexto.fillRect(150, 310, 50, 50);
+                        contexto.fillRect(700, 310, 50, 50);
+                        contexto.fillRect(100, 360, 50, 150);
+                        contexto.fillRect(750, 360, 50, 150);
+                        contexto.fillRect(150, 510, 50, 50);
+                        contexto.fillRect(700, 510, 50, 50);
+                        contexto.fillRect(200, 560, 150, 50);
+                        contexto.fillRect(550, 560, 150, 50);
+                        contexto.fillRect(300, 610, 50, 100);
+                        contexto.fillRect(550, 610, 50, 100);
+                        contexto.fillRect(400, 610, 100, 50);
+                        contexto.fillRect(350, 510, 200, 50);
+                        contexto.fillRect(350, 110, 50, 50);
+                        contexto.fillRect(500, 110, 50, 50);
+    
+                        var a = document.getElementById("lienzo");
+                        var contexto = lienzo.getContext("2d");
+                        contexto.fillStyle = "#4BB050"                //verde oscuro
+                        contexto.fillRect(150, 210, 50, 50);
+                        contexto.fillRect(700, 210, 50, 50);
+                        contexto.fillRect(100, 560, 50, 50);
+                        contexto.fillRect(100, 510, 50, 50);
+                        contexto.fillRect(750, 560, 50, 50);
+                        contexto.fillRect(750, 510, 50, 50);
+                        contexto.fillRect(300, 60, 50, 50);
+                        contexto.fillRect(250, 60, 50, 50);
+                        contexto.fillRect(600, 60, 50, 50);
+                        contexto.fillRect(550, 60, 50, 50);
+    
+                        var a = document.getElementById("lienzo");
+                        var contexto = lienzo.getContext("2d");
+                        contexto.fillStyle = "#8BC24A"                 //verde mas claro
+                        contexto.fillRect(200, 210, 50, 50);
+                        contexto.fillRect(650, 210, 50, 50);
+                        contexto.fillRect(250, 610, 50, 50);
+                        contexto.fillRect(600, 610, 50, 50);
+                        contexto.fillRect(500, 610, 50, 50);
+                        contexto.fillRect(350, 610, 50, 50);
+    
+                        var d = document.getElementById("lienzo");
+                        var contexto = lienzo.getContext("2d");
+                        contexto.fillStyle = "#FF9600"                //naranja mas oscuro
+                        contexto.fillRect(200, 310, 50, 50);
+                        contexto.fillRect(650, 310, 50, 50);
+                        contexto.fillRect(150, 360, 50, 50);
+                        contexto.fillRect(150, 410, 50, 50);
+                        contexto.fillRect(150, 460, 50, 50);
+                        contexto.fillRect(200, 510, 50, 50);
+                        contexto.fillRect(300, 510, 50, 50);
+                        contexto.fillRect(550, 510, 50, 50);
+                        contexto.fillRect(650, 510, 50, 50);
+                        contexto.fillRect(700, 460, 50, 50);
+                        contexto.fillRect(700, 410, 50, 50);
+                        contexto.fillRect(700, 360, 50, 50);
+                        contexto.fillRect(500, 310, 50, 50);
+                        contexto.fillRect(450, 310, 50, 50);
+                        contexto.fillRect(400, 310, 50, 50);
+                        contexto.fillRect(350, 310, 50, 50);
+    
+                        var d = document.getElementById("lienzo");
+                        var contexto = lienzo.getContext("2d");
+                        contexto.fillStyle = "white"                   //blanco
+                        contexto.fillRect(250, 310, 100, 50);
+                        contexto.fillRect(250, 360, 50, 50);
+                        contexto.fillRect(250, 410, 50, 50);
+                        contexto.fillRect(250, 510, 50, 50);
+                        contexto.fillRect(550, 310, 100, 50);
+                        contexto.fillRect(600, 360, 50, 50);
+                        contexto.fillRect(600, 410, 50, 50);
+                        contexto.fillRect(600, 510, 50, 50);
+    
+                        var d = document.getElementById("lienzo");
+                        var contexto = lienzo.getContext("2d");
+                        contexto.fillStyle = "#FEC107"                 //naranjas
+                        contexto.fillRect(200, 360, 50, 50);
+                        contexto.fillRect(200, 410, 50, 50);
+                        contexto.fillRect(200, 460, 50, 50);
+                        contexto.fillRect(250, 460, 50, 50);
+                        contexto.fillRect(300, 460, 50, 50);
+                        contexto.fillRect(300, 410, 50, 50);
+                        contexto.fillRect(300, 360, 50, 50);
+                        contexto.fillRect(350, 360, 50, 50);
+                        contexto.fillRect(350, 410, 50, 50);
+                        contexto.fillRect(350, 460, 50, 50);
+                        contexto.fillRect(400, 360, 50, 50);
+                        contexto.fillRect(400, 410, 50, 50);
+                        contexto.fillRect(400, 460, 50, 50);
+                        contexto.fillRect(450, 360, 50, 50);
+                        contexto.fillRect(450, 410, 50, 50);
+                        contexto.fillRect(450, 460, 50, 50);
+                        contexto.fillRect(500, 360, 50, 50);
+                        contexto.fillRect(500, 410, 50, 50);
+                        contexto.fillRect(500, 460, 50, 50);
+                        contexto.fillRect(550, 360, 50, 50);
+                        contexto.fillRect(550, 410, 50, 50);
+                        contexto.fillRect(550, 460, 50, 50);
+                        contexto.fillRect(600, 460, 50, 50);
+                        contexto.fillRect(650, 360, 50, 50);
+                        contexto.fillRect(650, 410, 50, 50);
+                        contexto.fillRect(650, 460, 50, 50);
+                        
+    
+                        
+                        var d = document.getElementById("lienzo");
+                        var contexto = lienzo.getContext("2d");
+                        contexto.fillStyle = "white"                   //Fondo blanco
+    
+                        contexto.fillRect(0, 11, 250, 50);
+                        contexto.fillRect(650, 11, 270, 50);
+                        contexto.fillRect(700, 60, 230, 50);
+                        contexto.fillRect(750, 110, 170, 50);
+                        contexto.fillRect(800, 160, 130, 50);
+                        contexto.fillRect(800, 210, 130, 50);
+                        contexto.fillRect(850, 260, 80, 50);
+                        contexto.fillRect(850, 310, 80, 50);
+                        contexto.fillRect(850, 360, 80, 50);
+                        contexto.fillRect(850, 410, 80, 50);
+                        contexto.fillRect(850, 460, 80, 50);
+                        contexto.fillRect(850, 510, 80, 50);
+                        contexto.fillRect(850, 560, 80, 50);
+                        contexto.fillRect(800, 610, 170, 50);
+                        contexto.fillRect(750, 660, 170, 50);
+                        contexto.fillRect(700, 710, 230, 50);
+                        contexto.fillRect(650, 760, 270, 50);
+                        contexto.fillRect(550, 810, 370, 50);
+                        contexto.fillRect(0, 860, 920, 50);
+                        contexto.fillRect(0, 810, 350, 50);
+                        contexto.fillRect(0, 760, 250, 50);
+                        contexto.fillRect(0, 710, 200, 50);
+                        contexto.fillRect(0, 660, 150, 50);
+                        contexto.fillRect(0, 610, 100, 50);
+                        contexto.fillRect(0, 60, 50, 600);
+                        contexto.fillRect(0, 60, 200, 50);
+                        contexto.fillRect(0, 110, 150, 50);
+                        contexto.fillRect(50, 160, 50, 100);
+                       
+    
+                        var d = document.getElementById("lienzo");
+                        var contexto = lienzo.getContext("2d");
+                        contexto.fillStyle = "black"                   //Borde Canva
+    
+                        contexto.fillRect(0, 910, 920, 10);
+                        contexto.fillRect(910, 0, 10, 910);
+                        contexto.fillRect(0, 0, 10, 920);
+                        contexto.fillRect(0, 0, 920, 10);
+    
+                        var d = document.getElementById("lienzo");
+                        var contexto = lienzo.getContext("2d");
+                        contexto.fillStyle = "#4BB050" 
+                        //verde oscuro
+                        contexto.fillRect(300, 210, 300, 50);
+                        contexto.fillRect(400, 110, 100, 50);
+                        contexto.fillRect(200, 110, 100, 50);
+                        contexto.fillRect(600, 110, 100, 50);
+                        contexto.fillRect(700, 160, 50, 50);
+                        contexto.fillRect(150, 160, 50, 50);
+                        contexto.fillRect(100, 260, 50, 100);
+                        contexto.fillRect(750, 260, 50, 100);
+                        contexto.fillRect(150, 610, 100, 50);
+                        contexto.fillRect(350, 560, 200, 50);
+                        contexto.fillRect(650, 610, 100, 50);
+                        contexto.fillRect(600, 660, 50, 50);
+                        contexto.fillRect(250, 660, 50, 50);
+                        contexto.fillRect(350, 660, 200, 150);
+    
+                        var d = document.getElementById("lienzo");
+                        var contexto = lienzo.getContext("2d");
+                        contexto.fillStyle = "#8BC24A"
+                                                                         //verde claro
+                        contexto.fillRect(350, 60, 200, 50);
+                        contexto.fillRect(300, 110, 50, 50);
+                        contexto.fillRect(550, 110, 50, 50);
+                        contexto.fillRect(150, 560, 50, 50);
+                        contexto.fillRect(700, 560, 50, 50);
+                        
+                        var d = document.getElementById("lienzo");
+                        var contexto = lienzo.getContext("2d");
+                        contexto.fillStyle = "#118ACC"
+                                                                        //fondo - azul
+                        contexto.fillRect(10,10, 40 ,900);
+                        contexto.fillRect(50, 10, 50 ,250);
+                        contexto.fillRect(100, 10, 50 ,150);
+                        contexto.fillRect(150, 10, 50 ,100);
+                        contexto.fillRect(200, 10, 50 ,50);
+                      
+                        contexto.fillRect(650, 10, 50 ,50);
+                        contexto.fillRect(700, 10, 50 ,100);
+                        contexto.fillRect(750, 10, 50 ,150);
+                        contexto.fillRect(800, 10, 50 ,250);
+    
+                        contexto.fillRect(850, 10, 60 ,900);
+                        contexto.fillRect(50, 610, 50 ,300);
+                        contexto.fillRect(100, 660, 50 ,250);
+                        contexto.fillRect(150, 710, 50 ,200);
+                        contexto.fillRect(200, 760, 50 ,150);
+                        contexto.fillRect(250, 810, 100 ,100);
+    
+                        contexto.fillRect(800, 610, 50 ,300);
+                        contexto.fillRect(750, 660, 50 ,250);
+                        contexto.fillRect(700, 710, 50 ,200);
+                        contexto.fillRect(650, 760, 50 ,150);
+                        contexto.fillRect(550, 810, 100 ,100);
+    
+                        contexto.fillRect(350, 860, 200 ,50);
+    
+                    </script>
+                
+                <br><br>
+                <h3>Imagenes de codigo Canvas</h3><br><br>
+                <img src="img/Practica6/Code_766_23.29.26.png" class="img1"><br><br>
+                <img src="img/Practica6/Code_767_23.29.33.png" class="img1"><br><br>
+                <img src="img/Practica6/Code_768_23.29.40.png" class="img1"><br><br>
+                <img src="img/Practica6/Code_769_23.29.47.png" class="img1"><br><br>
+                <img src="img/Practica6/Code_770_23.29.54.png" class="img1"><br><br>
+                <img src="img/Practica6/Code_771_23.30.04.png" class="img1"><br><br>
+
+                
+                
+                <div class="datos">
+                <h1>Conclusiones individuales</h1><br>
+                <h5><strong></strong>Emmanuel Enrique Larraga Bueno</strong></h5><br>
+                <p>En conclusion esta practica me ayudo a nuevamente progunfizar mis conocimientos en cuestion de como funcionan o como se manejan las posiciones y organizacion de una pagina web, ya sea para la formacion de dibujos como triangulos, pixel art, formas o dibujos mas complejos e incluso animaciones que por si solas con mas complejas que un dibujo estatico, pero en si la programacion con las etiquetas canvas me ayudo a darme una idea de como funcionan dichas etiquetas.</p><br><br>
+
+                <h5><strong>Alan Guillermo Ramos Zavala</strong></h5><br>
+                <p>Al comenzar a realizar el dibujo no tenía un conocimiento previo de cómo hacerlo, pero después de investigar y practicar un poco me resulto un poco fácil, ya que los cuadros que debía de poner para formar el contorno del dibujo a veces se repetían las coordenadas, solo fue cuestión de entenderle mejor. Creo que es una gran herramienta la cual puede ayudar a que una página se vea mejor con este tipo de métodos.</p><br><br>
+
+                <h5><strong>Adrian Fuentes Mendoza</strong></h5><br>
+                <p>Tras esta practica, fue entre complicado y sencillo, principalmente complicado debido aque no sabía utilizar
+                    lo que es el canvas, nunca se me habia dado la oportunidad, pero tras esta practica al utilizarlo, al comienzo fue complicado
+                    por saber la declaracion de las variables para los colores en el lienzo y encontrar las coordenadas correctas para realizar el dibujo
+                    ya despues de seguir practicando, sinseramente se me empezó a facilitar, lo unico que doy a pensar es que lo siento tardado
+                    pero debe existir una forma de automatizarlo para agilizarlo, en general, una practica de mucha utilidad.
+                </p><br><br>
+
+                <h5><strong>Isaias Jair Solano Peral</strong></h5><br>
+                <p>A traves de esta practica , la numero 7 en la que tuvimos que hacer uso de elemento Canvas para crear una ilustracion o  dibujo.
+                    Para ello tuvimos que consultar los links, fuentes o documentacion que se nos dio. La elaboracion del dibujo fue algo laboriosa al tener que trabajar con coordenadas y acomodar cada elemento del dibujo, pero poco a poco adquirimos cierta practica. De forma personal pude aprender a usar de forma basica el elemento Canvas de forma basica
+                    pero tambien pude entender las variaciones o flexibilidad que puede tener para crear diversar formas y estilos como rectangulos, circulos, lineas, flechas con colores ,contornos, degradados entre otros.
+                    Puedo concluir que con canvas agregamos una imagen dinamica que ofrece varias ventajas por que la podemos modificar en tiempo real cuando la creamos.
+
+                </p><br><br>
+
+                <h5><strong>Enrique Escobedo Adame</strong></h5><br>
+                <p>
+                    Al realizar la actividad me di cuenta que se podia realizar el dibujo de una forma sencilla entendiendo la manera en la que esta acomodado el diseño, se manejo po medio de coordenadas y dimenciones de la cuandricula para poder realizar dicho diseño.
+                    Me resulto sencillo ralizar la actividad de esta manera.
+                </p><br><br>
+
+                        </div>
+                    </div>
+            </article>
+        </div>
+    </div>
+</main>
+</body>
+</html>
